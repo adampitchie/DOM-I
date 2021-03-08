@@ -62,15 +62,40 @@ navAbout.textContent = siteContent["nav"]["nav-item-5"]
 navContact.textContent = siteContent["nav"]["nav-item-6"]
 
 const ctaParent = document.querySelector(".cta-text")
-ctaParent.children[0].textContent = "DOM Is Awesome"
-ctaParent.children[1].textContent = "Get Started"
+ctaParent.children[0].textContent = siteContent["cta"]["h1"]
+ctaParent.children[1].textContent = siteContent["cta"]["button"]
 
 const topContent = document.querySelector(".top-content")
 
 const firstDiv = topContent.children[0]
-firstDiv.children[0].textContent = 'Features'
-firstDiv.children[1].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+firstDiv.children[0].textContent = siteContent["main-content"]["features-h4"]
+firstDiv.children[1].textContent = siteContent["main-content"]["features-content"]
 
 const secondDiv = topContent.children[1]
-secondDiv.children[0].textContent = 'About'
-secondDiv.children[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+secondDiv.children[0].textContent = siteContent["main-content"]["about-h4"]
+secondDiv.children[1].textContent = siteContent["main-content"]["about-content"]
+
+const bottomContent = document.querySelector(".bottom-content")
+
+const thirdDiv = bottomContent.children[0]
+thirdDiv.children[0].textContent = siteContent["main-content"]["services-h4"]
+thirdDiv.children[1].textContent = siteContent["main-content"]["services-content"]
+
+const fourthDiv = bottomContent.children[1]
+fourthDiv.children[0].textContent = siteContent["main-content"]["product-h4"]
+fourthDiv.children[1].textContent = siteContent["main-content"]["product-content"]
+
+const fifthDiv = bottomContent.children[2]
+fifthDiv.children[0].textContent = siteContent["main-content"]["vision-h4"]
+fifthDiv.children[1].textContent = siteContent["main-content"]["vision-content"]
+
+const contact = document.querySelector(".contact")
+
+contact.children[0].textContent = siteContent["contact"]["contact-h4"]
+contact.children[1].textContent = siteContent["contact"]["address"]
+contact.children[2].textContent = siteContent["contact"]["phone"]
+contact.children[3].textContent = siteContent["contact"]["email"]
+
+const footer = document.querySelector("footer")
+
+footer.children[0].textContent = siteContent["footer"]["copyright"]
