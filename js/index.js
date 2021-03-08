@@ -99,3 +99,16 @@ contact.children[3].textContent = siteContent["contact"]["email"]
 const footer = document.querySelector("footer")
 
 footer.children[0].textContent = siteContent["footer"]["copyright"]
+
+const newLink = document.createElement('a')
+newLink.textContent = 'Blog'
+newLink.href = "#"
+document.querySelector("nav").appendChild(newLink);
+
+const secondLink = document.createElement('a')
+secondLink.textContent = 'Link2'
+secondLink.href = "#"
+document.querySelector("nav").appendChild(secondLink);
+
+const nav = document.querySelector("nav a")
+nav.style.color = "green"
