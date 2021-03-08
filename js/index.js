@@ -40,3 +40,37 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let ctaImg = document.getElementById("cta-img")
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
+
+let middleImg = document.getElementById("middle-img")
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+const navServices = document.querySelector("a");
+const navProd = navServices.nextElementSibling;
+const navVision = navProd.nextElementSibling;
+const navFeatures = navVision.nextElementSibling;
+const navAbout = navFeatures.nextElementSibling;
+const navContact = navAbout.nextElementSibling;
+
+navServices.textContent = siteContent["nav"]["nav-item-1"]
+navProd.textContent = siteContent["nav"]["nav-item-2"]
+navVision.textContent = siteContent["nav"]["nav-item-3"]
+navFeatures.textContent = siteContent["nav"]["nav-item-4"]
+navAbout.textContent = siteContent["nav"]["nav-item-5"]
+navContact.textContent = siteContent["nav"]["nav-item-6"]
+
+const ctaParent = document.querySelector(".cta-text")
+ctaParent.children[0].textContent = "DOM Is Awesome"
+ctaParent.children[1].textContent = "Get Started"
+
+const topContent = document.querySelector(".top-content")
+
+const firstDiv = topContent.children[0]
+firstDiv.children[0].textContent = 'Features'
+firstDiv.children[1].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+const secondDiv = topContent.children[1]
+secondDiv.children[0].textContent = 'About'
+secondDiv.children[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
